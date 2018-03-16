@@ -174,7 +174,7 @@ font-size: 15px;
 							font-family: 'fjalla_oneregular'; text-transform: uppercase;}
 	.featured-content .block .btn:hover{ color: #fff; border: 3px solid #fff;}
 
-	.portfolio-block{background: #1b1b1b; padding:35px 25px;  padding-right: 0; padding-bottom: 10px; 
+	.portfolio-block{background: #1b1b1b; padding:35px 25px;  padding-right: 25px; padding-bottom: 10px; 
                   text-align: center;  border-top: 1px solid #292929; letter-spacing: 1px;}
   .portfolio-block h1{font-size: 30px; line-height: 34px; color: #cc0000; text-transform: uppercase; font-family: 'fjalla_oneregular'; 
                      font-weight: normal; padding-bottom: 15px; }
