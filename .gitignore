@@ -1,2 +1,8 @@
 .idea/
 *.DS_Store
+
+# ignore scss compiled files
+sass/bootstrap.css
+sass/bootstrap.css.map
+sass/style.css
+sass/style.css.map

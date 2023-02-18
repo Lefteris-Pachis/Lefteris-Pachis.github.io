@@ -8,7 +8,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #791111 !default;
+$brand-primary: #631717 !default;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -112,7 +112,7 @@ body {
 	font-family: $font-primary;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 1.7;
+	line-height: 1.4;
 	color: darken($brand-white,70%);
 	background: #fff;
 }
@@ -802,10 +802,10 @@ h1, h2, h3, h4, h5, h6, figure {
 	width: 100%;
 	display: table;
 	overflow: hidden;
-	@media screen and(max-width: $screen-sm){
+	@media screen and (max-width: $screen-sm){
 		height: 400px;
 	}
-	@media screen and(max-width: $screen-xs){
+	@media screen and (max-width: $screen-xs){
 		height: 270px;
 	}	
 	.desc{
@@ -831,7 +831,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			-webkit-transform: translate3d(0, 15px, 0);
 			transform: translate3d(0, 15px, 0);
 		}
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			opacity: 1;
 			background: rgba($brand-white,.6);
 			h3{
@@ -909,10 +909,10 @@ h1, h2, h3, h4, h5, h6, figure {
 		background-repeat: no-repeat;
 		position: relative;
 		height: 300px;
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			height: 400px;
 		}
-		@media screen and(max-width: $screen-xs){
+		@media screen and (max-width: $screen-xs){
 			height: 270px;
 		}
 	}
@@ -930,7 +930,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 		@include transition(.3s);
 
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			padding: 10px;
 		}
 
@@ -949,7 +949,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				list-style: none;
 				display: inline-block;
 				margin-left: 10px;
-				@media screen and(max-width: $screen-sm){
+				@media screen and (max-width: $screen-sm){
 					font-size: 14px;
 				}
 				&:first-child{
@@ -1004,14 +1004,14 @@ h1, h2, h3, h4, h5, h6, figure {
 		position: relative;
 		@include flex();
 		@include flexwrap();
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			display: none;
 		}
 	}
 	.choose{
 		width: 50%;
 		padding: 4em;
-		@media screen and(max-width: $screen-sm){
+		@media screen and (max-width: $screen-sm){
 			width: 100%;
 			padding: 4em 1em;
 		}
