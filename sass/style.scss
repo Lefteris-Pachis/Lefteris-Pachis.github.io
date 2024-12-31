@@ -1,8 +1,6 @@
 $font-primary: 'Space Mono', Arial, serif;
 $font-secondary: 'Kaushan Script', cursive;
 
-
-
 // Overrides
 $grid-gutter-width: 40px !default; 
 $border-radius-base:  4px !default;
@@ -25,7 +23,109 @@ $brand-bg-dark: #2F3C4F;
 $input-border-focus:  $brand-primary !default;
 $form-group-margin-bottom:       30px !default;
 
+// Dark Theme Variables
+$dark-bg-color: #1a1a2e;          // Deep, soft navy-like background
+$dark-text-color: #e0e0e0;        // Soft, light text for readability
+$dark-accent-color: #6a5acd;      // Softer, less harsh accent color
+$dark-hover-color: #7b68ee;       // Slightly lighter accent for hover states
 
+// Dark Theme Styles
+body.dark-theme {
+    background-color: $dark-bg-color;
+    color: $dark-text-color;
+    transition: background-color 0.3s, color 0.3s;
+
+    // Header and Navigation
+    #bep-header {
+        background-color: $dark-bg-color;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    // Headings
+    .bep-heading h2 {
+        color: $dark-text-color;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+	.bep-about h2 {
+		color: $dark-text-color;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	#bep-resume {
+		.company {
+			color: $dark-text-color;
+		}
+	}
+
+	h3 {
+		color: $dark-text-color;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	.bep-info span {
+		color: $dark-text-color;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	#bep-contact h2{
+		color: $dark-text-color;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+    // Timeline and Panels
+    .timeline-panel {
+        background: $dark-bg-color;
+        color: $dark-text-color;
+        border-radius: 8px;
+        // border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+	.timeline-title h3{
+		color: $brand-black;
+		text-shadow: none;
+	}
+
+    // Feature Sections
+    .feature-left {
+        color: $dark-text-color;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+    }
+
+    // Progress Bars
+    .progress-bar {
+        background-color: $dark-accent-color;
+        height: 5px;
+    }
+
+    // Links
+    a {
+        color: $dark-accent-color;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $dark-hover-color;
+        }
+    }
+
+    // Buttons
+    .btn-outline {
+        border-color: $dark-accent-color;
+        color: $dark-text-color;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $dark-accent-color;
+            color: $dark-bg-color;
+        }
+    }
+
+    // Optional: Reduce blue light with warmer undertones
+    * {
+        scrollbar-color: $dark-accent-color $dark-bg-color;
+    }
+}
 
 // Mixin
 @mixin translateX($translatex) {
@@ -298,6 +398,14 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
+#bep-header {
+	.email{
+		color: $brand-white;
+		a{
+			color: $brand-white;
+		}
+	}
+}
 
 #bep-features {
 	background: $brand-primary;
@@ -305,7 +413,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		color: $brand-white;
 	}
 	.services-padding{
-		padding: 7em 0;
+		padding: 5em 0 0 0;
 	}
 	.feature-left {
 		margin-bottom: 40px;
@@ -371,7 +479,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				margin-bottom: 0;
 			}
 			a{
-				color: $brand-black !important;
+				color: $brand-white !important;
 			}
 		}
 	}
@@ -386,10 +494,15 @@ h1, h2, h3, h4, h5, h6, figure {
 #bep-blog,
 #bep-pricing,
 #bep-contact{
-	padding: 7em 0;
+	padding: 5em 0 0 0;
 	clear: both;
 	@media screen and (max-width: $screen-sm) {
-		padding: 3em 0;
+		padding: 3em 0 0 0;
+	}
+}
+#bep-skills{
+	@media screen and (max-width: $screen-sm) {
+		display: none;
 	}
 }
 #bep-started{
@@ -397,21 +510,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #bep-resume{
 	.download-icon{
-		width: 34px;
-    	height: 34px;
-		margin: auto;
 		span{
-			color: #000;
-			font-weight: 600;
-			font-size: 15px;
+			font-size: 16px;
 		}
 	}
 }
 
-.bep-bg-color{
-	// background: #233142;
-
-}
 .bep-bg-dark{
 	background: $brand-bg-dark;
 	background: $brand-primary;
@@ -421,7 +525,6 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 	}
 }
-
 
 .info{
 	margin: 0;
@@ -506,7 +609,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 .bep-heading {
-	margin-bottom: 5em;
+	margin-bottom: 3em;
 	&.bep-heading-sm {
 		margin-bottom: 2em;
 	}
@@ -671,7 +774,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: normal;
-	color: lighten($brand-black, 75%);
+	color: lighten($brand-black, 20%);
 }
 
 .timeline-body > p,
@@ -984,7 +1087,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-#bep-consult{
+#bep-contact{
 	@include flex();
 	@include flexwrap();
 	width: 100%;
@@ -1013,7 +1116,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		padding: 4em;
 		@media screen and (max-width: $screen-sm){
 			width: 100%;
-			padding: 4em 1em;
+			padding: 1em 1em;
 		}
 	}
 }
@@ -1085,10 +1188,10 @@ h1, h2, h3, h4, h5, h6, figure {
 	
 	&:focus, &:active {
 		box-shadow: none;
-		border: 2px solid rgba(0,0,0,.8);
-	}
-
+		border-color: $brand-primary;
+  }
 }
+
 input[type="text"] {
 	height: 50px;
 }
@@ -1258,7 +1361,7 @@ input[type="text"] {
 	border: 2px solid lighten($brand-black, 50%);
 	font-size: 16px;
 	@include transition(.3s);
-	&:hover, &:focus, &:active {
+	&:hover {
 		box-shadow: none;
 	}
 }
@@ -1288,7 +1391,7 @@ input[type="text"] {
 // Form Input Field
 .form-control {
 	box-shadow: none;
-	background: transparent;
+	background: $brand-white;
 	border: 2px solid rgba(0, 0, 0, 0.1);
 	height: 54px;
 	font-size: 18px;
@@ -1330,4 +1433,55 @@ input[type="text"] {
 	.js & {
 		opacity: 0;
 	}
+}
+
+// Theme Toggle Button Styles
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: #000;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #631717;
+        }
+
+        .fa-sun, .fa-moon {
+            transition: opacity 0.3s ease;
+        }
+
+        .fa-sun {
+            display: none;
+        }
+
+        .fa-moon {
+            display: block;
+        }
+    }
+}
+
+body.dark-theme {
+    .theme-toggle button {
+        color: #fff;
+
+        .fa-sun {
+            display: block;
+        }
+
+        .fa-moon {
+            display: none;
+        }
+
+        &:hover {
+            color: #8d81d9;
+        }
+    }
 }

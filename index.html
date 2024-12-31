@@ -42,6 +42,9 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -73,6 +76,9 @@
 									<li><a href="https://www.deviantart.com/beep3r"><img class="social-icon" src="images/deviantart-brands.svg"></a></li>
 								</ul>
 							</p>
+							<p class="email">
+								email: <a href="mailto:lefteris.pachis@proton.me">lefteris.pachis@proton.me</a>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -88,13 +94,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block">Lefteris Pachis</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">lefteris.pachis@proton.me</span></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
+				<div class="col-md-12 bep-about">
 					<h2>Hello There!</h2>
 					<p>
 						My name is Lefteris Pachis, and I hail from Chalkida, Greece. 
@@ -107,12 +107,12 @@
 					<p>
 						In my free time, I immerse myself in my love for travel and photography exploration. Furthermore, I find excitement in engaging with game development and digital art.					</p>
 					<p>
-						<ul class="bep-social-icons">
+						<!-- <ul class="bep-social-icons">
 							<li><a href="https://github.com/Lefteris-Pachis"><img class="social-icon" src="images/github-brands.svg"></a></li>
 							<li><a href="https://www.linkedin.com/in/lefteris-pachis-55968815b/"><i class="icon-linkedin2"></i></a></li>
 							<li><a href="https://unsplash.com/@bep_one"><img class="social-icon" src="images/unsplash.svg"></a></li>
 							<li><a href="https://www.deviantart.com/beep3r"><img class="social-icon" src="images/deviantart-brands.svg"></a></li>
-						</ul>
+						</ul> -->
 					</p>
 				</div>
 			</div>
@@ -126,8 +126,8 @@
 					<h2>My Resume</h2>
 					<div class="download-icon">
 						<a href="/files/CV.pdf">
-							<img src="images/file-download-solid.svg">
-							<span>CV</span>
+							<!-- <img src="images/file-download-solid.svg"> -->
+							<span>Download my CV</span>
 						</a>
 					</div>
 				</div>
@@ -136,7 +136,7 @@
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline">
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
+							<div class="timeline-title"><h3>Work Experience</h3></div>
 						</li>
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-gears"></i></div>
@@ -245,7 +245,7 @@
 
 						<br>
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
+							<div class="timeline-title"><h3>Education</h3></div>
 						</li>
 						<li class="timeline-inverted animate-box">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
@@ -263,7 +263,7 @@
 							</div>
 						</li>
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Publications</h3></div>
+							<div class="timeline-title"><h3>Publications</h3></div>
 						</li>
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-newspaper"></i></div>
@@ -279,7 +279,7 @@
 							</div>
 						</li>
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Certifications / Awards</h3></div>
+							<div class="timeline-title"><h3>Certifications / Awards</h3></div>
 						</li>
 						<li class="timeline-inverted animate-box">
 							<div class="timeline-badge"><img class="icon" src="images/magento-icon.svg"></div>
@@ -291,7 +291,7 @@
 								<div class="timeline-body">
 									<div class="cert-badge">
 										<a href="https://www.youracclaim.com/badges/dcff63f0-2502-449d-8ebc-a3b98210e080">
-											<img src="images/adobe-certified-professional-magento-commerce-developer.png">
+											 Link
 										</a>
 									</div>
 									<!-- <p><a href="https://www.youracclaim.com/badges/dcff63f0-2502-449d-8ebc-a3b98210e080">Link</a></p> -->
@@ -309,7 +309,6 @@
 									<p><a href="files/ICT - Best Paper Award.pdf">Link</a></p>
 								</div>
 							</div>
-						</li>
 			    	</ul>
 				</div>
 			</div>
@@ -329,6 +328,37 @@
 					<div class="col-md-4 text-center">
 						<div class="feature-left">
 							<span class="icon">
+								<img class="project-icon" src="images/go-svgrepo-com.svg">
+							</span>
+							<div class="feature-copy">
+								<h3>Products Api</h3>
+								<p>
+									The products-api repository is a RESTful API for managing products, built with Go, Gin, and GORM. 
+									It utilizes Docker Compose for containerization and includes a Postman collection for API testing.
+								</p>
+								<a href="https://github.com/Lefteris-Pachis/products-api" class="myButton">Github Page</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<img class="project-icon" src="images/laravel-svgrepo-com.svg">
+							</span>
+							<div class="feature-copy">
+								<h3>Spy Api</h3>
+								<p>
+									The spy-api project is a RESTful API built with Laravel for managing a system of famous spies. 
+									It provides endpoints to create, retrieve, update, and delete spy records, facilitating efficient management of spy-related data. 
+									The project includes a Postman collection for testing the API endpoints.
+								</p>
+								<a href="https://github.com/Lefteris-Pachis/spy-api" class="myButton">Github Page</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
 								<img class="project-icon" src="images/yii.svg">
 							</span>
 							<div class="feature-copy">
@@ -344,7 +374,8 @@
 							</div>
 						</div>
 					</div>
-
+				</div>
+				<div class="row">
 					<div class="col-md-4 text-center">
 						<div class="feature-left">
 							<span class="icon">
@@ -362,7 +393,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="col-md-4 text-center">
 						<div class="feature-left">
 							<span class="icon">
@@ -381,10 +411,7 @@
 								<a href="files/Super Mario Bros.zip" class="myButton">Download Game</a>
 							</div>
 						</div>
-
 					</div>
-				</div>
-				<div class="row">
 					<div class="col-md-4 text-center">
 						<div class="feature-left">
 							<span class="icon">
@@ -401,6 +428,8 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="row">
 					<div class="col-md-4 text-center">
 						<div class="feature-left">
 							<span class="icon">
@@ -419,9 +448,7 @@
 								<a href="files/Project_HY360_2015-2016.rar" class="myButton">Download Project</a>
 							</div>
 						</div>
-
 					</div>
-
 					<div class="col-md-4 text-center">
 						<div class="feature-left">
 							<span class="icon">
@@ -437,11 +464,7 @@
 								<a href="files/project_hy359.rar" class="myButton">Download Project</a>
 							</div>
 						</div>
-
 					</div>
-					
-				</div>
-				<div class="row">
 					<div class="col-md-4 text-center">
 						<div class="feature-left">
 							<span class="icon">
@@ -569,7 +592,7 @@
 		</div>
 	</div>
 
-	<div id="bep-consult">
+	<div id="bep-contact">
 		<div class="video bep-video" style="background-image: url(images/contact.jpg);">
 			<div class="overlay"></div>
 		</div>
@@ -595,15 +618,15 @@
 	</div>
 
 	
-	<div id="bep-footer">
+	<!-- <div id="bep-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; 2023 Lefteris Pachis. </p>
+				<div class="col-md-12 text-center">
+					<p>&copy; <span id="current-year">2024</span> Lefteris Pachis. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
@@ -625,6 +648,13 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
-	</body>
-</html>
+	<div class="theme-toggle">
+		<button id="theme-toggle-btn" aria-label="Toggle Dark Mode">
+			<i class="fas fa-moon"></i>
+			<i class="fas fa-sun"></i>
+		</button>
+	</div>
 
+	<script src="js/theme-toggle.js"></script>
+</body>
+</html>
