@@ -57,7 +57,4 @@ document.addEventListener('DOMContentLoaded', function() {
             navToggle.classList.remove('active');
         }
     });
-
-    // Optional: Add console log for debugging
-    console.log('Navigation script loaded successfully')
 });
