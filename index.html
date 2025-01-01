@@ -51,264 +51,287 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<script src="js/navigation.js"></script>
+
+	<style>
+        body {
+            padding-top: 52.4px; /* Adjust based on header height */
+        }
+    </style>
 
 	</head>
 	<body>
+		<header class="fixed-header">
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#about" class="nav-link">About</a></li>
+					<li><a href="#resume" class="nav-link">Resume</a></li>
+					<li><a href="#projects" class="nav-link">Projects</a></li>
+					<li class="skills-nav"><a href="#skills" class="nav-link">Skills</a></li>
+					<li><a href="#contact" class="nav-link">Contact</a></li>
+				</ul>
+				<div class="nav-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</header>
 		
-	<div class="bep-loader"></div>
+		<div class="bep-loader"></div>
 	
-	<div id="page">	
-	<header id="bep-header" class="bep-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/main-image.jpg);"></div>
-							<h1><span>Lefteris Pachis</span></h1>
-							<h3><span>Software Developer</span></h3>
-							<p>
-								<ul class="bep-social-icons">
-									<li><a href="https://github.com/Lefteris-Pachis"><img class="social-icon" src="images/github-brands.svg"></a></li>
-									<li><a href="https://www.linkedin.com/in/lefteris-pachis-55968815b/"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://unsplash.com/@bep_one"><img class="social-icon" src="images/unsplash.svg"></a></li>
-									<li><a href="https://www.deviantart.com/beep3r"><img class="social-icon" src="images/deviantart-brands.svg"></a></li>
-								</ul>
-							</p>
-							<p class="email">
-								email: <a href="mailto:lefteris.pachis@proton.me">lefteris.pachis@proton.me</a>
-							</p>
+		<div id="page">	
+		<header id="bep-header" class="bep-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t js-fullheight">
+							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+								<div class="profile-thumb" style="background: url(images/main-image.jpg);"></div>
+								<h1><span>Lefteris Pachis</span></h1>
+								<h3><span>Software Developer</span></h3>
+								<p>
+									<ul class="bep-social-icons">
+										<li><a href="https://github.com/Lefteris-Pachis"><img class="social-icon" src="images/github-brands.svg"></a></li>
+										<li><a href="https://www.linkedin.com/in/lefteris-pachis-55968815b/"><i class="icon-linkedin2"></i></a></li>
+										<li><a href="https://unsplash.com/@bep_one"><img class="social-icon" src="images/unsplash.svg"></a></li>
+										<li><a href="https://www.deviantart.com/beep3r"><img class="social-icon" src="images/deviantart-brands.svg"></a></li>
+									</ul>
+								</p>
+								<p class="email">
+									email: <a href="mailto:lefteris.pachis@proton.me">lefteris.pachis@proton.me</a>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<div id="bep-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center bep-heading">
-					<h2>About Me</h2>
+		<div id="bep-about" class="animate-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center bep-heading">
+						<h2>About Me</h2>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 bep-about">
-					<h2>Hello There!</h2>
-					<p>
-						My name is Lefteris Pachis, and I hail from Chalkida, Greece. 
-						I earned my computer science degree at the University of Crete in Heraklion. 
-						Following that, I accumulated two years of experience as a software developer in the e-commerce sector. 
-						Subsequently, I dedicated a year and a half as a backend developer within a team that revamped an e-learning web application using a microservices architecture.
+				<div class="row">
+					<div class="col-md-12 bep-about">
+						<h2>Hello There!</h2>
+						<p>
+							My name is Lefteris Pachis, and I hail from Chalkida, Greece. 
+							I earned my computer science degree at the University of Crete in Heraklion. 
+							Following that, I accumulated two years of experience as a software developer in the e-commerce sector. 
+							Subsequently, I dedicated a year and a half as a backend developer within a team that revamped an e-learning web application using a microservices architecture.
 
-						Currently, I'm an Associate Software Developer at a forex and CFD trading company, having transitioned from my previous role at a company specializing in chatbot development.
-					</p>
-					<p>
-						In my free time, I immerse myself in my love for travel and photography exploration. Furthermore, I find excitement in engaging with game development and digital art.					</p>
-					<p>
-						<!-- <ul class="bep-social-icons">
-							<li><a href="https://github.com/Lefteris-Pachis"><img class="social-icon" src="images/github-brands.svg"></a></li>
-							<li><a href="https://www.linkedin.com/in/lefteris-pachis-55968815b/"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="https://unsplash.com/@bep_one"><img class="social-icon" src="images/unsplash.svg"></a></li>
-							<li><a href="https://www.deviantart.com/beep3r"><img class="social-icon" src="images/deviantart-brands.svg"></a></li>
-						</ul> -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="bep-resume" class="bep-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center bep-heading">
-					<h2>My Resume</h2>
-					<div class="download-icon">
-						<a href="/files/CV.pdf">
-							<!-- <img src="images/file-download-solid.svg"> -->
-							<span>Download my CV</span>
-						</a>
+							Currently, I'm an Associate Software Developer at a forex and CFD trading company, having transitioned from my previous role at a company specializing in chatbot development.
+						</p>
+						<p>
+							In my free time, I immerse myself in my love for travel and photography exploration. Furthermore, I find excitement in engaging with game development and digital art.					</p>
+						<p>
+							<!-- <ul class="bep-social-icons">
+								<li><a href="https://github.com/Lefteris-Pachis"><img class="social-icon" src="images/github-brands.svg"></a></li>
+								<li><a href="https://www.linkedin.com/in/lefteris-pachis-55968815b/"><i class="icon-linkedin2"></i></a></li>
+								<li><a href="https://unsplash.com/@bep_one"><img class="social-icon" src="images/unsplash.svg"></a></li>
+								<li><a href="https://www.deviantart.com/beep3r"><img class="social-icon" src="images/deviantart-brands.svg"></a></li>
+							</ul> -->
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div class="timeline-title"><h3>Work Experience</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-gears"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Associate Software Developer</h3>
-									<span class="company">XM - 2023 - 2024</span>
-								</div>
-								<div class="timeline-body">
-									<p>
-										Design, implement, and maintain web applications, including the company's site and internal services using Symfony framework. Write tests for continuous integration, and ensure high-quality code.
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-stack"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Mid Senior Full Stack Developer</h3>
-									<span class="company">Memorandum - 2022 - 2023</span>
-								</div>
-								<div class="timeline-body">
-									<p>
-										Development and maintenance of chatbots and analytics admin pages using Node.js/MongoDB/Laravel/Python/Vue.js/Nuxt.
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-gears"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Back End Developer</h3>
-									<span class="company">Express Publishing - 2020 - 2021</span>
-								</div>
-								<div class="timeline-body">
-									<p>
-										Sofware development and maintenance of Express DigiBooks application based on Yii2 PHP framework.
-										API development for a new version of Express DigiBooks application based on AWS microservices implemented with Node.js and Express framework.
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-browser"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Web Developer</h3>
-									<span class="company">MageGuide - 2019 - 2020</span>
-								</div>
-								<div class="timeline-body">
-									<p>
-										Magento 2 projects development frontend and backend. 
-										Intergration with Elasticsearch and Solr search engines. 
-										Implementation and maintenance of ERP Connectors.
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-gears"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Junior Back End Developer</h3>
-									<span class="company">Netsteps S.A. - 2018 - 2019</span>
-								</div>
-								<div class="timeline-body">
-									<p>
-										Magento 2 extensions development interacting with third party APIs and databases. 
-										Implementation of ERP integrations and other data exchange mechanisms.
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-tools-2"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">IT Technician/Network Administrator</h3>
-									<span class="company">Supreme Military Command of the Interior and Islands, Hellenic Army - 2017 - 2018</span>
-								</div>
-								<div class="timeline-body">
-									<p>
-										Software and hardware maintenance of servers. System administrator of the internal network. Technical support for 150+ local computers and other hardware.
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-genius"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Undergraduate Research Fellow</h3>
-									<span class="company"><a href="https://www.ics.forth.gr/">ICS FORTH</a> - 2015 - 2016</span>
-								</div>
-								<div class="timeline-body">
-									<p>
-										Research for more efficient algorythm based on my batchelor thesis.
-										Read more for <a href="files/Anchor Pair 4.pdf">Anchor Pair 4</a>.
-										<br>Languages/Tools Used: Java(AnyLogic), LATEX.
-									</p>
-								</div>
-							</div>
-						</li>
+		</div>
 
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div class="timeline-title"><h3>Education</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Computer Science, BSc. IT</h3>
-									<span class="company"><a href="https://www.csd.uoc.gr/">University of Crete, CS Department</a> - 2009 - 2017</span>
-								</div>
-								<div class="timeline-body">
-									<p>
-										Bachelor Thesis: Development of routing protocol for wireless nanonetworks.<br>
-										Supervisor: Sotiris Ioannidis (Research Director with the ICS FORTH)
-									</p><br>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-heading text-center animate-box">
-							<div class="timeline-title"><h3>Publications</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-newspaper"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">N3: Addressing and routing in 3D nanonetworks</h3>
-									<span class="company"><a href="https://ict-2016.org/">23rd International Conference onTelecommunications (ICT)</a> - 2016</span>
-								</div>
-								<div class="timeline-body">
-									<p>Authors:  A. Tsioliaridou, C. Liaskos, L. Pachis, S. Ioannidis, A. Pitsillides.</p>
-									<p><a href="https://www.researchgate.net/publication/304665151_N3_Addressing_and_routing_in_3D_nanonetworks">Link</a></p><br>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-heading text-center animate-box">
-							<div class="timeline-title"><h3>Certifications / Awards</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><img class="icon" src="images/magento-icon.svg"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Adobe Certified Professional — Magento Commerce Developer</h3>
-									<span class="company">Adobe - Mar 2019</span>
-								</div>
-								<div class="timeline-body">
-									<div class="cert-badge">
-										<a href="https://www.youracclaim.com/badges/dcff63f0-2502-449d-8ebc-a3b98210e080">
-											 Link
-										</a>
+		<div id="bep-resume" class="bep-bg-color">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center bep-heading">
+						<h2>My Resume</h2>
+						<div class="download-icon">
+							<a href="/files/CV.pdf">
+								<!-- <img src="images/file-download-solid.svg"> -->
+								<span>Download my CV</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0">
+						<ul class="timeline">
+							<li class="timeline-heading text-center animate-box">
+								<div class="timeline-title"><h3>Work Experience</h3></div>
+							</li>
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge"><i class="icon-gears"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Associate Software Developer</h3>
+										<span class="company">XM - 2023 - 2024</span>
 									</div>
-									<!-- <p><a href="https://www.youracclaim.com/badges/dcff63f0-2502-449d-8ebc-a3b98210e080">Link</a></p> -->
+									<div class="timeline-body">
+										<p>
+											Design, implement, and maintain web applications, including the company's site and internal services using Symfony framework. Write tests for continuous integration, and ensure high-quality code.
+										</p>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><img class="icon" src="images/award-solid.svg"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Best Paper Award</h3>
-									<span class="company"><a href="https://ict-2016.org/">23rd International Conference onTelecommunications (ICT)</a> - 2016</span>
+							</li>
+							<li class="timeline-inverted animate-box">
+								<div class="timeline-badge"><i class="icon-stack"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Mid Senior Full Stack Developer</h3>
+										<span class="company">Memorandum - 2022 - 2023</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											Development and maintenance of chatbots and analytics admin pages using Node.js/MongoDB/Laravel/Python/Vue.js/Nuxt.
+										</p>
+									</div>
 								</div>
-								<div class="timeline-body">
-									<p><a href="files/ICT - Best Paper Award.pdf">Link</a></p>
+							</li>
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge"><i class="icon-gears"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Back End Developer</h3>
+										<span class="company">Express Publishing - 2020 - 2021</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											Sofware development and maintenance of Express DigiBooks application based on Yii2 PHP framework.
+											API development for a new version of Express DigiBooks application based on AWS microservices implemented with Node.js and Express framework.
+										</p>
+									</div>
 								</div>
-							</div>
+							</li>
+							<li class="timeline-inverted animate-box">
+								<div class="timeline-badge"><i class="icon-browser"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Web Developer</h3>
+										<span class="company">MageGuide - 2019 - 2020</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											Magento 2 projects development frontend and backend. 
+											Intergration with Elasticsearch and Solr search engines. 
+											Implementation and maintenance of ERP Connectors.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge"><i class="icon-gears"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Junior Back End Developer</h3>
+										<span class="company">Netsteps S.A. - 2018 - 2019</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											Magento 2 extensions development interacting with third party APIs and databases. 
+											Implementation of ERP integrations and other data exchange mechanisms.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted animate-box">
+								<div class="timeline-badge"><i class="icon-tools-2"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">IT Technician/Network Administrator</h3>
+										<span class="company">Supreme Military Command of the Interior and Islands, Hellenic Army - 2017 - 2018</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											Software and hardware maintenance of servers. System administrator of the internal network. Technical support for 150+ local computers and other hardware.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge"><i class="icon-genius"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Undergraduate Research Fellow</h3>
+										<span class="company"><a href="https://www.ics.forth.gr/">ICS FORTH</a> - 2015 - 2016</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											Research for more efficient algorythm based on my batchelor thesis.
+											Read more for <a href="files/Anchor Pair 4.pdf">Anchor Pair 4</a>.
+											<br>Languages/Tools Used: Java(AnyLogic), LATEX.
+										</p>
+									</div>
+								</div>
+							</li>
+
+							<br>
+							<li class="timeline-heading text-center animate-box">
+								<div class="timeline-title"><h3>Education</h3></div>
+							</li>
+							<li class="timeline-inverted animate-box">
+								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Computer Science, BSc. IT</h3>
+										<span class="company"><a href="https://www.csd.uoc.gr/">University of Crete, CS Department</a> - 2009 - 2017</span>
+									</div>
+									<div class="timeline-body">
+										<p>
+											Bachelor Thesis: Development of routing protocol for wireless nanonetworks.<br>
+											Supervisor: Sotiris Ioannidis (Research Director with the ICS FORTH)
+										</p><br>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-heading text-center animate-box">
+								<div class="timeline-title"><h3>Publications</h3></div>
+							</li>
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge"><i class="icon-newspaper"></i></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">N3: Addressing and routing in 3D nanonetworks</h3>
+										<span class="company"><a href="https://ict-2016.org/">23rd International Conference onTelecommunications (ICT)</a> - 2016</span>
+									</div>
+									<div class="timeline-body">
+										<p>Authors:  A. Tsioliaridou, C. Liaskos, L. Pachis, S. Ioannidis, A. Pitsillides.</p>
+										<p><a href="https://www.researchgate.net/publication/304665151_N3_Addressing_and_routing_in_3D_nanonetworks">Link</a></p><br>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-heading text-center animate-box">
+								<div class="timeline-title"><h3>Certifications / Awards</h3></div>
+							</li>
+							<li class="timeline-inverted animate-box">
+								<div class="timeline-badge"><img class="icon" src="images/magento-icon.svg"></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Adobe Certified Professional — Magento Commerce Developer</h3>
+										<span class="company">Adobe - Mar 2019</span>
+									</div>
+									<div class="timeline-body">
+										<div class="cert-badge">
+											<a href="https://www.youracclaim.com/badges/dcff63f0-2502-449d-8ebc-a3b98210e080">
+												 Link
+											</a>
+										</div>
+										<!-- <p><a href="https://www.youracclaim.com/badges/dcff63f0-2502-449d-8ebc-a3b98210e080">Link</a></p> -->
+									</div>
+								</div>
+							</li>
+							<li class="animate-box timeline-unverted">
+								<div class="timeline-badge"><img class="icon" src="images/award-solid.svg"></div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h3 class="timeline-title">Best Paper Award</h3>
+										<span class="company"><a href="https://ict-2016.org/">23rd International Conference onTelecommunications (ICT)</a> - 2016</span>
+									</div>
+									<div class="timeline-body">
+										<p><a href="files/ICT - Best Paper Award.pdf">Link</a></p>
+									</div>
 			    	</ul>
 				</div>
 			</div>

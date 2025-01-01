@@ -36,6 +36,36 @@ body.dark-theme {
     transition: background-color 0.3s, color 0.3s;
 
     // Header and Navigation
+	.fixed-header {
+		background-color: $dark-bg-color;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		.main-nav {
+			ul {
+				li {
+					a {
+						color: $dark-text-color;
+						&:hover {
+							color: $brand-primary;
+						}
+					}
+				}
+			}
+			.nav-toggle {
+				span {
+					background-color: $dark-text-color;
+				}
+			}
+		}
+		@media screen and (max-width: 768px) {
+			.main-nav ul {
+				background-color: $dark-bg-color;
+				li {
+					border-top: 1px solid rgba(255, 255, 255, 0.1);
+				}
+			}
+		}
+	}
+
     #bep-header {
         background-color: $dark-bg-color;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -364,8 +394,6 @@ h1, h2, h3, h4, h5, h6, figure {
 			font-size: 16px;
 			@media screen and (max-width: $screen-sm) {
 				font-size: 14px;
-			}
-			span{
 			}
 		}
 		.profile-thumb{
@@ -1438,7 +1466,7 @@ input[type="text"] {
 // Theme Toggle Button Styles
 .theme-toggle {
     position: fixed;
-    top: 20px;
+    top: 15px;
     right: 20px;
     z-index: 1000;
 
@@ -1482,6 +1510,104 @@ body.dark-theme {
 
         &:hover {
             color: #8d81d9;
+        }
+    }
+}
+
+/* Fixed Header Styles */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $brand-white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+
+		@media screen and (max-width: 768px) {
+			justify-content: left;
+		}
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: 600;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: #007bff;
+                    }
+                }
+
+				@media screen and (max-width: 768px) {
+					a {
+						padding: 13px 100% 13px 0;
+					}
+				}
+            }
+
+            .skills-nav {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+
+            @media screen and (max-width: 768px) {
+                display: flex;
+            }
+
+            span {
+                width: 25px;
+                height: 3px;
+                background-color: #333;
+                margin: 3px 0;
+                transition: 0.4s;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .main-nav ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			gap: unset;
+
+            &.active {
+                display: flex;
+            }
+
+            li {
+                text-align: left;
+                padding: 15px;
+                border-top: 1px solid #eee;
+            }
         }
     }
 }

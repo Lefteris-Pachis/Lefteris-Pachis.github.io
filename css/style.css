@@ -3,6 +3,27 @@ body.dark-theme {
   color: #e0e0e0;
   transition: background-color 0.3s, color 0.3s;
 }
+body.dark-theme .fixed-header {
+  background-color: #1a1a2e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body.dark-theme .fixed-header .main-nav ul li a {
+  color: #e0e0e0;
+}
+body.dark-theme .fixed-header .main-nav ul li a:hover {
+  color: #631717;
+}
+body.dark-theme .fixed-header .main-nav .nav-toggle span {
+  background-color: #e0e0e0;
+}
+@media screen and (max-width: 768px) {
+  body.dark-theme .fixed-header .main-nav ul {
+    background-color: #1a1a2e;
+  }
+  body.dark-theme .fixed-header .main-nav ul li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
 body.dark-theme #bep-header {
   background-color: #1a1a2e;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1341,7 +1362,7 @@ input[type=text] {
 
 .theme-toggle {
   position: fixed;
-  top: 20px;
+  top: 15px;
   right: 20px;
   z-index: 1000;
 }
@@ -1377,4 +1398,91 @@ body.dark-theme .theme-toggle button .fa-moon {
 }
 body.dark-theme .theme-toggle button:hover {
   color: #8d81d9;
+}
+
+/* Fixed Header Styles */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+.fixed-header .main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+}
+@media screen and (max-width: 768px) {
+  .fixed-header .main-nav {
+    justify-content: left;
+  }
+}
+.fixed-header .main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+.fixed-header .main-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.fixed-header .main-nav ul li a:hover {
+  color: #007bff;
+}
+@media screen and (max-width: 768px) {
+  .fixed-header .main-nav ul li a {
+    padding: 13px 100% 13px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fixed-header .main-nav ul .skills-nav {
+    display: none;
+  }
+}
+.fixed-header .main-nav .nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .fixed-header .main-nav .nav-toggle {
+    display: flex;
+  }
+}
+.fixed-header .main-nav .nav-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .fixed-header .main-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: unset;
+  }
+  .fixed-header .main-nav ul.active {
+    display: flex;
+  }
+  .fixed-header .main-nav ul li {
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid #eee;
+  }
 }/*# sourceMappingURL=style.css.map */
